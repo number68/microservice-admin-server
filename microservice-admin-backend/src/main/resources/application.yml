@@ -18,7 +18,7 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
     security:
-      username: choice
+      username: admin
       password: 63FUUWO+ghBkrEZL3hCjG3eihTc=
     service-url:
       defaultZone: http://${eureka.client.security.username}:${eureka.client.security.password}@eureka.dev.choicesaas.cn/eureka/
@@ -40,4 +40,4 @@ management:
 javamelody:
   collectserver.enabled: true
   init-parameters:
-    storage-directory: E:/tmp/javamelody
+    storage-directory: /tmp/javamelody
